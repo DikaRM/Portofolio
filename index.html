@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio_Dika</title>
+</head>
+<style>
+body{
+  overflow-x: hidden;
+  
+}
+.nav{
+  background: black;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.nav a{
+  color: white;
+  padding: 10px 100px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.nav a:hover{
+  opacity: 1.5;
+  font-weight: bold;
+}
+.nav span{
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+#iden{
+  border-radius: 50%;
+}
+h2{
+  text-align: center;
+  font-weight: bold;
+}
+.hero{
+  position: absolute;
+  top: 10%;
+ left: 50%;
+text-transform:uppercase;
+font-weight:bold;
+font-size: 20px;
+}
+.hero h4{
+  text-align: center;
+}
+.hero h1{
+  text-align: right;
+}
+
+
+
+#about{
+  background: black;
+  color: white;
+  border-radius: 5px;
+  
+}
+#about h2{
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+}
+#about h5{
+  font-size: 25px;
+}
+#contact{
+  border-radius: 5px;
+  border-bottom: 2px solid black;
+}
+#contact h2{
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+}
+
+label{
+  color: white;
+  display: block;
+  font-size: 25px;
+  padding-top: 50px;
+  text-transform:uppercase;
+ font-weight: bold;
+}
+input{
+  width: 50%;
+  background: transparent;
+  border: none;
+  border: 1px solid black;
+  text-transform:uppercase;
+  font-weight: bold;
+}
+button{
+  text-align: center;
+  background: white;
+  border: none;
+  border: 1px solid black;
+  width: 20%;
+  text-transform:uppercase;
+  font-weight: bold;
+}
+#pad{
+  padding-bottom: 200px;
+}
+
+#skill{
+  padding-top: 200px;
+  border-radius: 5px;
+  
+}
+#skill h2{
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+}
+.footer{
+  background: black;
+  height: 400px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.footer h2{
+font-weight: bold;
+letter-spacing: 10px;
+}
+#post{
+  display: none;
+  animation: animate 1s linear infinite;
+  transition: 1s;
+}
+@keyframe animate{
+  0%{
+  transform:translateX(0); 
+  }
+  50%{
+  transform:translateX(25%);
+  }
+  100%{
+    transform:translateX(50%);
+  }
+}
+textarea{
+  background: transparent;
+  border-color: black;
+  color: white;
+}
+
+</style>
+<body style=background-image:url(media/20241109_002954.jpg)>;
+<div class="nav">
+  <span>Dika RM <br>Dev</span>
+  <a href="#about">About </a>
+  <a href="#contact">Contact</a>
+  <a href="#skill">Skills</a>
+</div>
+<img src="media/20241108_023504.jpg" height="400px" id="iden">
+<div class="hero">
+  <h3>Halo Perkenalkan</h3>
+  <h4>Nama Saya </h4>
+  <h1>Dika RM Dev</h1>
+  
+</div>
+<div id="about">
+  <h2>Tentang Saya</h2>
+  <h5>Saya Dilahirkan Di Kota Jakarta,02 February 2008.</h5>
+  <h5>Latar Belakang Pendidikan Saya Adalah Smk/Sementara Insyaallah S1 Amin </h5>
+  <h5>Temen-temen,Saya Disini Sebagai Fullstack Developer +++ </h5>
+  <h5>Yang Dimana Seorang Developer Yang Menguasai Penuh Ilmu PPLG Mulai Dari Web, Game, Mobile, Software bahkan, Robotik</h5>
+</div>
+<div id="contact">
+  <h2>Kontak Saya</h2>
+  <form action="" onsubmit="send()">
+  <label for="nama">Nama Anda</label>
+  <input type="text" id="nama" required>
+  <label for="no">Nomor HP</label>
+  <input type="number" id="no" min="12">
+  <div id="pad"></div>
+    <label for="area">Ketikan PesanMu</label>
+  <textarea  id="area" cols="30" rows="10">Ketikan Pesanmu</textarea>
+  <center><button type="submit" id="submit"><h1 id="kirim">Kirim </h1><br><h1 id="post">Loading</h2></button></center>
+  
+  <center>
+  <h3 id="giv"></h3>  
+  </center>
+  
+  
+  </form>
+</div>
+<div id="skill">
+  <h2>Kemampuan Saya</h2>
+  <h3>Kini Saya Baru Mempelajari sekitar 5 Bahasa Pemrograman</h3>
+  <h5>HTML</h5>
+  <h5>CSS</h5>
+  <h5>Java Script</h5>
+  <h5>typescript</h5>
+  <h5>React UI</h5>
+  <h5>PHP</h5>
+  <h5>Phyton</h5>
+  <h5>Mysql</h5>
+  <h5>bootstrap</h5>
+  <h5>gdevelop</h5>
+  <h5>Excel</h5>
+</div>
+<div class="footer">
+  <h2>Terima Kasih Telah Berkunjung Di Website Dika RM Dev</h2>
+  <h4>Ikuti Media Sosial Dika RM Dev</h4>
+  <img src="" alt="">YouTube 
+  <img src="" alt="">Tiktok
+  <img src="" alt="">Instagram 
+  <h6>©COPYRIGHT ARE RESERVED BY THIS AUTHOR WEBSITE IS DIKA RM FULLSTACK DEVELOPER</h6>
+</div>
+<script>
+const nama = document.getElementById('nama').value;
+const no = document.getElementById('no').value;
+const area = document.getElementById('area').value;
+const fu = [nama]
+console.log(fu[0])
+  document.getElementById('submit').addEventListener('click',function () {
+    const post = document.getElementById('post');
+    const kirim = document.getElementById('kirim');
+    const giv = document.getElementById('giv');
+    post.style.display='block';
+    kirim.style.display='none';
+    console.log(fu[0])
+    
+    
+    setTimeout(() => {
+      post.style.display='none'
+      kirim.style.display='block';
+      if (!nama || !no) {
+        giv.innerText = 'Siapa Kamu?, Coba Lagi'
+      }else{
+      giv.innerText='My Contact Is 083849190510';}
+    },3000)
+  })
+  function send() {
+    const url ='https://wa.me/083849190510?text=Halo'+nama + area ;
+    window.open(url,'blank')
+    
+  }
+</script>
+</body>
+
+</html>
